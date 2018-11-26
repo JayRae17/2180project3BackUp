@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hire Me: Login</title>
+        <link href = "logIn.css" type = "text/css" rel = "stylesheet"/>
+    </head>
+    
+    <body>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("pword");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+             }
+        </script>
+        <div class="wrapper">
+            
+             <section>
+                 <h1>HIRE ME</h1>
+                  <form id ="form" action = "">
+                    <label for="email"> Email</label>
+                    <input type="text" id ="email" required/><br/>
+                   
+                     <label for="pword"> Password</label>
+                     <input type="password" id ="pword" required/>
+                    <input type="checkbox" onclick="myFunction()" id = "check"><!-- toggle between password visibility -->
+                     <label for = "check"><i>Show Password</i></label>
+                    
+                    <br />
+                    
+                     <input type="submit" id = "sub" value="Log In"/>
+                    
+                 </form>
+            </section>
+        </div>
+    </body>
+</html>

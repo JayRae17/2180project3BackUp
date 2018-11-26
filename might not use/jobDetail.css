@@ -1,0 +1,104 @@
+body{
+    font-family: arial;
+}
+
+header{
+    padding:4px;
+    padding-left: 40px;
+    background-color: #212424;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav {
+    float: left;
+    width: 18%;
+    background-color: #EBECEC;
+    position: absolute;
+    height: 140%;
+    overflow: auto;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+nav>ul{
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+nav>ul>li{
+    padding-bottom: 20px;
+    margin-left:-20px;
+}
+
+img{ /* the nav icons*/
+    padding-right: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#details {
+    padding-top: 45px;
+    float: right;
+    width: 54%;
+    margin-right: 25%;
+}
+
+#title{
+    display: inline;
+    font-size: 40px;
+   
+}
+
+#details>p{
+    color: gray;
+    margin-bottom: -10px;
+    font-size: 15px;
+     
+}
+
+#date{
+    margin-top: 1px;
+}
+
+#cat{
+    margin-bottom: 25px;
+}
+
+#details>h2{
+     margin-bottom: -15px;
+     font-size: 22px;
+}
+
+#details>button{
+    background-color: #6CD03A; 
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 13px 55px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: -10px;
+    float: right;
+}
+
+.jobDes{
+     border-top-style: solid;
+     border-top-color: #EBECEC;
+     border-top-width: 2px;
+}
+
+#details>h3{
+    font-size: 22px;
+}
+
+.jobDes>p{
+    font-size: 15px;
+}

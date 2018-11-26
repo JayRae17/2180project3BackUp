@@ -1,0 +1,291 @@
+body{
+    font-family: arial;
+}
+
+header{
+    padding:4px;
+    padding-left: 40px;
+    background-color: #212424;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav {
+    float: left;
+    width: 18%;
+    background-color: #EBECEC;
+    position: absolute;
+    height: 140%;
+    overflow: auto;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+ul{
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+li{
+    padding-bottom: 20px;
+    margin-left:-20px;
+}
+
+li>a:hover{
+    color:#59b42b;
+    font-size: larger;
+}
+
+img{ /* the nav icons*/
+    padding-right: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    display: inline;
+    font-size: 30px;
+    margin-left: -20px;
+}
+
+section {
+    padding-top: 45px;
+    float: right;
+    width: 66%;
+    margin-right: 130px;
+}
+
+button{
+    float: right;
+    margin-left: 0px;
+    background-color: #6CD03A; 
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 13px 55px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+button:hover{
+    background-color: #59b42b;
+}
+
+caption{
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+table{
+    margin-top: 35px;
+    margin-bottom: 80px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: -20px;
+}
+
+tr{
+  border: solid;
+  border-width: 1px 0;
+  border-bottom-color: #e7e9ec;
+  border-top:none;
+}
+
+th{
+    background-color: #EBECEC;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+td{
+    
+     font-size: 15px;
+     padding-bottom: 15px;
+     padding-top: 15px;
+}
+
+tr:last-child { 
+  border-bottom: none;
+}
+    
+tbody>tr>:nth-child(1){
+    font-weight: bold;
+    padding-left: 10px;
+    text-align:left;
+}
+
+tbody>tr>:nth-child(2){
+  
+    text-align:left;
+}
+
+tbody>tr>:nth-child(3){
+     
+     text-align:left;
+}
+
+tbody>tr>:nth-child(4){
+    text-align:left;
+}
+
+td>a:hover{
+    color:#6CD03A;
+    font-weight: bold;
+}
+
+#new{ /*label for new jobs hidden*/
+    margin-right: -40px;
+    display: none;
+}
+
+
+/* CSS FOR NEW USER*/
+
+form>p{
+    margin-top: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input{
+    width: 45%;
+    padding: 8px 15px;
+    margin-bottom: 7px;
+    border: 1px inset #ccc;
+    border-radius: 4px;
+    display: block;
+    background-color: #f1f1f1;
+}
+
+input[type=submit] {
+    width: 17%;
+    background-color: #2892e1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 0.8em;
+}
+
+
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #FEFEFE;
+    color: black;
+    border-color: #87B3FE;
+    
+}
+
+/* CSS FOR NEW JOB*/
+
+
+label{
+     font-size: 12px;
+    font-weight: bold;
+}
+
+#des{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    height:70px;
+    width: 47.5%;
+    word-wrap: break-word;
+    border: 1px inset #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    padding: 5px;
+}
+
+select{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: block;
+    background-color: #f1f1f1;
+    width: 48.5%;
+    padding: 10px 15px;
+}
+
+/* CSS FOR JOB DETAIL*/
+
+#details {
+    padding-top: 45px;
+    float: right;
+    width: 54%;
+    margin-right: 24%;
+}
+
+#title{
+    display: inline;
+    font-size: 40px;
+    margin-left: 0.1px;
+   
+}
+
+#details>p{
+    color: gray;
+    margin-bottom: -10px;
+    font-size: 15px;
+     
+}
+
+#date{
+    margin-top: 5px;
+}
+
+
+#details>h2{
+     margin-bottom: -18px;
+     font-size: 22px;
+     margin-top: 30px;
+}
+
+#details>button{
+    background-color: #6CD03A; 
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 13px 55px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: -10px;
+    float: right;
+}
+
+#details>button:hover{
+    background-color: #59b42b;
+}
+
+.jobDes{
+     border-top-style: solid;
+     border-top-color: #EBECEC;
+     border-top-width: 2px;
+}
+
+#details>h3{
+    font-size: 22px;
+}
+
+.jobDes>p{
+    font-size: 15px;
+}
+
+.jobDes>ul{
+    list-style-type: disc;
+    margin-top: -20px;
+}
+
+

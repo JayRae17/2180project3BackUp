@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HireMe</title>
+        <link href = "home.css" type = "text/css" rel = "stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         
+    </head>
+    
+    <body id = "body">
+        
+        <script> // jquery function for navigation
+            $(document).ready(function(){
+                var trigger = $('#nav ul li a');
+                var container = $('#body');
+                
+                trigger.on('click', function(){
+                    var $this = $(this);
+                    var target = $this.data('target');
+                    
+                    container.load(target);
+                    
+                    return false;
+                });
+            });
+        </script>
+   
+        <div class="wrapper">
+            
+            <header>
+                <p>HireMe</p>
+            </header>
+          
+            <section id = "details">
+                <h1 id="title">Job Title</h1> 
+                <button type="button">Apply Now</button>
+                <p id = "date"> Date posted</p>
+                <p id = "cat">Category</p>
+                
+                <h2 id = "coName">Company Name<br>Parish, Jamaica </h2>
+                 <br/>
+                 <br/>
+                 
+                 <div class = "jobDes">
+                     
+                     <h3> Job Description</h3>
+                     <p id = "desc"> Job info goes here</p>
+                     <br/>
+                     <p> <b>Job Requirements</b></p>
+                     <ul id = "req">
+                         <li>
+                             list of requirements
+                         </li>
+                     </ul>
+                 </div>
+            </section>
+            
+            <nav id="nav">
+                 <ul>
+                     <li id ="home"> <img src = "http://www.stickpng.com/assets/images/588a6758d06f6719692a2d22.png" 
+                     width = "20" height = "15"><a href = "#" data-target ="home.html">Home</a></li>
+                     
+                     <li id ="add"><img src = "https://png.pngtree.com/svg/20170222/add_friends_232334.png" 
+                     width = "17" height = "18"><a href = "#" data-target ="newUser.html">Add User</a></li>
+                     
+                     <li id ="njob"><img src = "http://cdn.onlinewebfonts.com/svg/img_386644.png" 
+                     width = "17" height = "15"><a href = "#" data-target ="newJob.html">New Job </a></li>
+                     
+                     <li id ="log"><img src = "https://png.pngtree.com/svg/20170825/logout_1185957.png" 
+                     width = "17" height = "15"><a href = "#">Logout </a></li>
+                </ul>
+            </nav>
+            <br/>
+            
+        </div>
+    </body>
+</html>

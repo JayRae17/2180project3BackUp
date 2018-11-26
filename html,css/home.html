@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hire Me</title>
+        <link href = "home.css" type = "text/css" rel = "stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <!--link js file here-->
+    </head>
+    
+    <body id = "body">
+        
+        <script> 
+            $(document).ready(function(){
+                var nav = $('#nav ul li a');
+                var dtl = $('table tr td a');
+                var container = $('#body');
+                
+                nav.on('click', function(){ //ajax for navigation
+                    var $this = $(this);
+                    var target = $this.data('target');
+                    
+                    container.load(target);
+                    
+                    return false;
+                });
+                
+                dtl.on('click', function(){ //ajax for job detail
+                    var $this = $(this);
+                    var target = $this.data('target');
+                    
+                    container.load(target);
+                    
+                    return false;
+                });
+            });         
+        </script>
+            
+        <div class="wrapper">
+            
+            <header>
+                <p>HireMe</p>
+            </header>
+            
+            
+          
+            <section>
+                <h1>Dashboard</h1> <button type="button">Post a Job</button>
+                 
+                 <table> <!-- Jobs Available Table -->
+                     <caption>Available Jobs</caption>
+                     <tr class = "head">
+                         <th> Company</th>
+                         <th> Job Title</th>
+                         <th> Category</th>
+                         <th> Date</th> 
+                    </tr>
+                    
+                    <tr>
+                        <td> Jamaica Gleaner</td>
+<!--Link to jobDetail--><td><a href = "#" data-target ="jobDetail.html"> Product Marketing Manager</a></td>
+                        <td> Sales and Marketing</td>
+                        <td> Nov 3, 2018 <img id ="new" src ="https://png2.kisspng.com/20180327/ufq/kisspng-royalty-free-stock-photography-clip-art-new-5aba5820a9d2e9.3918526415221616966956.png" 
+                        width = "40" height = "16"></td> <!--the 'new' label -->
+                   </tr>
+            
+                    <tr>
+                        <td> </td>
+                        <td><a href = "#" data-target ="jobDetail.html"> hhd </a></td>
+                        <td> </td>
+                        <td>  <img id ="new" src ="https://png2.kisspng.com/20180327/ufq/kisspng-royalty-free-stock-photography-clip-art-new-5aba5820a9d2e9.3918526415221616966956.png" 
+                        width = "40" height = "16"></td>
+                    </tr>
+           
+                    <tr>
+                        <td> </td>
+                        <td><a href = "#" data-target ="jobDetail.html">hhd</a> </td>
+                        <td> </td>
+                        <td> <img id ="new" src ="https://png2.kisspng.com/20180327/ufq/kisspng-royalty-free-stock-photography-clip-art-new-5aba5820a9d2e9.3918526415221616966956.png" 
+                        width = "40" height = "16"></td> 
+                    </tr> 
+            
+                    <tr>
+                        <td> </td>
+                        <td> <a href = "#" data-target ="jobDetail.html">hhd</a>  </td>
+                        <td> </td>
+                        <td> <img id ="new" src ="https://png2.kisspng.com/20180327/ufq/kisspng-royalty-free-stock-photography-clip-art-new-5aba5820a9d2e9.3918526415221616966956.png" 
+                        width = "40" height = "16"></td> 
+            
+                    </tr>
+                    
+                    <tr>
+                        <td> </td>
+                        <td> <a href = "#" data-target ="jobDetail.html">hhd</a> </td>
+                        <td> </td>
+                        <td> <img id ="new" src ="https://png2.kisspng.com/20180327/ufq/kisspng-royalty-free-stock-photography-clip-art-new-5aba5820a9d2e9.3918526415221616966956.png" 
+                        width = "40" height = "16"></td>  
+                    </tr>
+                </table>
+            
+            
+                <table> <!-- Jobs Applied Table -->
+                    <caption>Jobs Applied For</caption>
+                    <tr class = "head">
+                        <th> Company</th>
+                        <th>Job Title </th>
+                        <th> Category</th>
+                        <th> Date Applied</th>   
+                    </tr>
+                    
+                    <tr>
+                        <td> Jamaica Gleaner</td>
+                        <td> <a href = "#" data-target ="jobDetail.html"> Product Marketing Manager</a></td>
+                        <td> Sales and Marketing</td>
+                        <td> Nov 3, 2018</td>
+                    </tr>
+            
+                    <tr>
+                        <td> </td>
+                        <td> <a href = "#" data-target ="jobDetail.html"> hhd</a></td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+           
+                    <tr>
+                        <td> </td>
+                        <td><a href = "#" data-target ="jobDetail.html">hhd</a>  </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+            
+                    <tr>
+                        <td> </td>
+                        <td> <a href = "#" data-target ="jobDetail.html">hhd</a> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+            
+                    <tr>
+                        <td> </td>
+                        <td> <a href = "#" data-target ="jobDetail.html">hhd</a> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </table>
+            </section>
+            
+            <nav id="nav">
+                 <ul>
+                     <li id ="home"> <img src = "http://www.stickpng.com/assets/images/588a6758d06f6719692a2d22.png" 
+                     width = "20" height = "15"><a href = "#" data-target ="home.html">Home</a></li>
+                     
+                     <li id ="add"><img src = "https://png.pngtree.com/svg/20170222/add_friends_232334.png" 
+                     width = "17" height = "18"><a href = "#" data-target ="newUser.html">Add User</a></li>
+                     
+                     <li id ="njob"><img src = "http://cdn.onlinewebfonts.com/svg/img_386644.png" 
+                     width = "17" height = "15"><a href = "#" data-target ="newJob.html">New Job </a></li>
+                     
+                     <li id ="log"><img src = "https://png.pngtree.com/svg/20170825/logout_1185957.png" 
+                     width = "17" height = "15"><a href = "#">Logout </a></li>
+                </ul>
+            </nav>
+            <br/>
+            
+        </div>
+    </body>
+    
+</html>
