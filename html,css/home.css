@@ -1,5 +1,6 @@
 body{
     font-family: arial;
+    margin: 0px;
 }
 
 header{
@@ -78,6 +79,7 @@ button{
 button:hover{
     background-color: #59b42b;
 }
+
 
 caption{
     text-align: left;
@@ -286,6 +288,18 @@ select{
 .jobDes>ul{
     list-style-type: disc;
     margin-top: -20px;
+}
+
+.valid{
+    background-color: #00FF00;
+}
+
+.invalid{
+    background-color:   #FF0000;
+}
+
+.hide{
+    visibility: hidden;
 }
 
 

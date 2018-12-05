@@ -35,14 +35,14 @@
             
              <section>
                  <h1>New Job</h1>
-                  <form id ="form" action = "">
-                    <p>Job Title </p><input type="text" placeholder = "e.g. Senior Designer or Product Manager"/><br />
+                  <form id ="form" action = "newjob.php" method ="post">
+                    <p>Job Title </p><input name="j_title" type="text" placeholder = "e.g. Senior Designer or Product Manager"/><br />
                     
                     <label for = "des">Job Description</label>
-                    <textarea rows="10" cols="30" id="des"></textarea>
+                    <textarea name ="j_des" rows="10" cols="30" id="des"></textarea>
                     
                     <label for = "cat">Category</label>
-                    <select id = "cat">
+                    <select name ="selection" id = "cat">
                       <option disabled="disabled" selected="selected">Select a category</option>
                       <option value="design"> Design</option>
                       <option value="prog">Programming</option>
@@ -51,9 +51,9 @@
                       <option value="sal"> Sales & Marketing</option>
                     </select>
                     
-                    <p>Company</p> <input type="text" /><br />
+                    <p>Company</p> <input name="comp" type="text" /><br />
                     
-                    <p>Job Location</p> <input type="text" placeholder = "e.g. Kingston, Jamaica"/><br />
+                    <p>Job Location</p> <input name="j_loc" type="text" placeholder = "e.g. Kingston, Jamaica"/><br />
                     
                      <input type="submit" id = "sub" value="Submit"/>
                  </form>
@@ -63,7 +63,7 @@
             <nav id="nav">
                  <ul>
                      <li id ="home"> <img src = "http://www.stickpng.com/assets/images/588a6758d06f6719692a2d22.png" 
-                     width = "20" height = "15"><a href = "#" data-target ="home.html">Home</a></li>
+                     width = "20" height = "15"><a href = "#" data-target ="home.php">Home</a></li>
                      
                      <li id ="add"><img src = "https://png.pngtree.com/svg/20170222/add_friends_232334.png" 
                      width = "17" height = "18"><a href = "#" data-target ="newUser.html">Add User</a></li>
@@ -72,7 +72,9 @@
                      width = "17" height = "15"><a href = "#" data-target ="newJob.html">New Job </a></li>
                      
                      <li id ="log"><img src = "https://png.pngtree.com/svg/20170825/logout_1185957.png" 
-                     width = "17" height = "15"><a href = "#">Logout </a></li>
+                     width = "17" height = "15"><a href = "logout.php">Logout </a></li>
+                     
+                     
                 </ul>
             </nav>
             <br/>
